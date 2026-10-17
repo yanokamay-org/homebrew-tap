@@ -1,0 +1,23 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Style
+        run: brew style yanokamay-org/tap
+
+      - name: Audit
+        run: brew audit --cask --strict --online yanokamay-org/tap/maiestro
+
+      - name: Install
+        run: brew install --cask yanokamay-org/tap/maiestro
