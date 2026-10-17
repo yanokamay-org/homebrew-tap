@@ -13,6 +13,9 @@ jobs:
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
+      - name: Trust tap
+        run: brew trust yanokamay-org/tap
+
       - name: Style
         run: brew style yanokamay-org/tap
 
