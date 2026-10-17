@@ -13,8 +13,8 @@ jobs:
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@main
 
-      - name: Trust tap
-        run: brew trust yanokamay-org/tap
+      - name: Trust cask
+        run: brew trust --cask yanokamay-org/tap/maiestro-code
 
       - name: Style
         run: brew style yanokamay-org/tap

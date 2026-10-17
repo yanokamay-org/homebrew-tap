@@ -5,8 +5,12 @@ Homebrew tap for [mAIestro Code](https://github.com/yanokamay-org/maiestro), a m
 ## Install
 
 ```sh
-brew install --cask yanokamay-org/tap/maiestro-code
+brew tap yanokamay-org/tap
+brew trust --cask yanokamay-org/tap/maiestro-code
+brew install --cask maiestro-code
 ```
+
+Homebrew only loads casks from third-party taps you've trusted. The `brew trust` line trusts this one cask, not the whole tap.
 
 Requires an Apple Silicon Mac.
 
