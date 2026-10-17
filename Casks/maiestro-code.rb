@@ -1,4 +1,4 @@
-cask "maiestro" do
+cask "maiestro-code" do
   version "0.4.5"
   sha256 "4e33b5deca5d3d26a6257fa8aa8c231d2e69439a76d316b71c2e132bce7e3cfc"
 

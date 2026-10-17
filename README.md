@@ -5,7 +5,7 @@ Homebrew tap for [mAIestro Code](https://github.com/yanokamay-org/maiestro), a m
 ## Install
 
 ```sh
-brew install --cask yanokamay-org/tap/maiestro
+brew install --cask yanokamay-org/tap/maiestro-code
 ```
 
 Requires an Apple Silicon Mac.
@@ -15,7 +15,7 @@ Requires an Apple Silicon Mac.
 Once a new release (with its `.dmg`) is published in `yanokamay-org/maiestro`, update the cask's version and checksum:
 
 ```sh
-brew bump-cask-pr --write-only --version X.Y.Z yanokamay-org/tap/maiestro
+brew bump-cask-pr --write-only --version X.Y.Z yanokamay-org/tap/maiestro-code
 ```
 
-Then commit and push the change to `Casks/maiestro.rb`.
+Then commit and push the change to `Casks/maiestro-code.rb`.

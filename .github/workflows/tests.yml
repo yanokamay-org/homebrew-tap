@@ -20,7 +20,7 @@ jobs:
         run: brew style yanokamay-org/tap
 
       - name: Audit
-        run: brew audit --cask --strict --online yanokamay-org/tap/maiestro
+        run: brew audit --cask --strict --online yanokamay-org/tap/maiestro-code
 
       - name: Install
-        run: brew install --cask yanokamay-org/tap/maiestro
+        run: brew install --cask yanokamay-org/tap/maiestro-code
