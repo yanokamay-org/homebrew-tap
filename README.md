@@ -12,7 +12,7 @@ brew install --cask maiestro-code
 
 Homebrew only loads casks from third-party taps you've trusted. The `brew trust` line trusts this one cask, not the whole tap.
 
-Requires an Apple Silicon Mac.
+Runs on both Apple Silicon and Intel Macs (universal binary).
 
 ## Bumping after a release
 

@@ -1,8 +1,8 @@
 cask "maiestro-code" do
-  version "0.4.5"
-  sha256 "4e33b5deca5d3d26a6257fa8aa8c231d2e69439a76d316b71c2e132bce7e3cfc"
+  version "0.4.6"
+  sha256 "642c3c3a4b4b6a79e1fc37713f366b7f6136d3e030e81c21df1ddb063b74160d"
 
-  url "https://github.com/yanokamay-org/maiestro/releases/download/v#{version}/mAIestro-Code_#{version}_aarch64.dmg"
+  url "https://github.com/yanokamay-org/maiestro/releases/download/v#{version}/mAIestro-Code_#{version}_universal.dmg"
   name "mAIestro Code"
   desc "Menu-bar dashboard for parallel Claude Code, Codex and Copilot sessions"
   homepage "https://github.com/yanokamay-org/maiestro"
@@ -12,7 +12,6 @@ cask "maiestro-code" do
     strategy :github_latest
   end
 
-  depends_on arch: :arm64
   depends_on :macos
 
   app "mAIestro Code.app"
